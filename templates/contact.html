@@ -1,0 +1,110 @@
+{%extends 'base.html' %} {% block title %}contact{% endblock title %} {%block body%}
+<!-- <div class="container-fluid px-0">
+    <h3 class="my-4px" style="  text-align: center; ">CONTACT US</h3>
+    <img src="https://source.unsplash.com/1000x500/?phone " class="d-block w-100 " alt="...">
+
+</div> -->
+<!-- form -->
+<div class="contact">
+    <h2>
+        <U> CONTACT US:-</U>
+    </h2>
+</div>
+<div class="container py-4">
+    <div class="form">
+        <h3>Tell us about you</h4>
+            <form method="post" action="/contact">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email " name='Email' placeholder="Enter your email ">
+                </div>
+                <div class="mb-3 ">
+                    <label for="phone " class="form-label ">Contact no</label>
+                    <input type="phone " class="form-control " id="phone " name='phone' placeholder="Enter your contact no ">
+                </div>
+                <div class="mb-3 ">
+                    <label for="exampleFormControlTextarea1 " class="form-label ">Any Suggestions or Feedback</label>
+                    <textarea class="form-control " id="suggestion " name='suggestion' rows="3 "></textarea>
+                </div>
+                <button class="btn btn-primary ">Submit</button>
+            </form>
+    </div>
+
+
+
+</div>
+
+<!-- <img src="/static/img/mail.jpg" class="card-img-top" alt="..."> -->
+<div class="msds">
+    <div class="card-body">
+        <h3> <u> Mail us at:-</u></h3>
+        <h4>SAINIMONTI17@GMAIL.COM</h4>
+        <h4>DEEPAK2117SAINI@GMAIL.COM</h4>
+    </div>
+
+    <div class="card-body2">
+        <h3> <u> Contact us at:-</u></h3>
+        <h4>8685068567</h4>
+        <h4>7015167992</h4>
+
+    </div>
+</div>
+
+<style>
+    body {
+        background-image: url("/static/img/contact.jpg");
+    }
+    /* input[type="text"] {
+        background: transparent;
+        border: none; */
+    
+    .card-body {
+        width: 35%;
+        float: left;
+        /* border: 2px solid red; */
+        height: 200px;
+        /* margin: 75px; */
+        padding: 10px;
+        background-image: url("/static/img/mail.jpg");
+        border-radius: 10px;
+    }
+    
+    .card-body2 {
+        width: 35%;
+        float: right;
+        /* border: 2px solid red; */
+        height: 200px;
+        /* margin: 75px; */
+        padding: 10px;
+        background-image: url("/static/img/landline.jpg");
+        border-radius: 10px;
+    }
+    
+    .msds {
+        /* border: 2px solid blue; */
+        margin: 25px 75px;
+    }
+    
+    h2,
+    h3,
+    h4 {
+        text-align: center;
+        /* text-decoration: underline; */
+        color: white;
+    }
+    
+    .form {
+        color: white;
+        font-weight: bold;
+    }
+    
+    h4 {
+        padding: 10px;
+    }
+</style>
+{%endblock body%}

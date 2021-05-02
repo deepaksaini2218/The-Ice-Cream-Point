@@ -1,0 +1,193 @@
+{%extends 'base.html' %} {% block title %}services{% endblock title %} {%block body%}
+<div class="tablee my-4">
+    <table>
+        <tr>
+            <th colspan="4">
+                <h2>MENU</h2>
+            </th>
+        </tr>
+        <tr>
+            <th rowspan="2">S.no</th>
+            <th rowspan="2">Ice-Cream</th>
+
+            <th colspan="2">Price</th>
+
+        </tr>
+        <tr>
+
+            <th>Single Scoop</th>
+            <th>Double Scoop</th>
+
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Vanilla</td>
+            <td>50</td>
+            <td>70</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Strawberry</td>
+            <td>50</td>
+            <td>70</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Butter Scotch</td>
+            <td>60</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Tutti frutti</td>
+            <td>60</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Chocolate</td>
+            <td>70</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Rajbhog </td>
+            <td>80</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Mint Choco Chip</td>
+            <td>80</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Black Walnut</td>
+            <td>80</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Burgundy Cherry</td>
+            <td>90</td>
+            <td>110</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td> Cherry Macaron</td>
+            <td>90</td>
+            <td>110</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>Banana Nut Fudge</td>
+            <td>90</td>
+            <td>110</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>Butter Brickle</td>
+            <td>100</td>
+            <td>120</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>Blue Heaven</td>
+            <td>110</td>
+            <td>130</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>Green Tea</td>
+            <td>110</td>
+            <td>130</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>Raspberry Apple</td>
+            <td>110</td>
+            <td>130</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>Rocky Road</td>
+            <td>110</td>
+            <td>130</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>Pistachio</td>
+            <td>130</td>
+            <td>150</td>
+        </tr>
+
+        <tr>
+            <th colspan="4">
+                <h3><u> Cones</u></h3>
+            </th>
+        </tr>
+        <tr>
+            <th rowspan="2">S.no</th>
+            <th rowspan="2">Cones</th>
+
+            <th colspan="2">Price</th>
+
+        </tr>
+        <tr>
+
+            <th>Small</th>
+            <th>Large</th>
+
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Choco Block</td>
+            <td>50</td>
+            <td>70</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Choco Brownie</td>
+            <td>60</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Yummy Strawberry</td>
+            <td>70</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Kesar pista</td>
+            <td>80</td>
+            <td>100</td>
+        </tr>
+    </table>
+</div>
+<style>
+    table {
+        text-align: center;
+        margin: auto;
+        padding: 5px;
+        width: 100%;
+    }
+    
+    table,
+    th,
+    td {
+        /* border: 1px solid red; */
+        padding 5px;
+        color: rgb(77, 40, 14);
+        font-weight: bold;
+        font-size: larger;
+    }
+    
+    body {
+        background-image: url('{{ STATIC_URL }}/static/img/menu.jpg');
+        background-size: 1285px;
+    }
+</style>
+
+{%endblock body%}

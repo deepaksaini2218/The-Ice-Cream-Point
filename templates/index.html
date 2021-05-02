@@ -1,0 +1,126 @@
+{%extends 'base.html' %} {%load static%} {% block title %}home{% endblock title %} {%block body%}
+<div class="container my-4">
+    <div class="intro">
+        <h2>Welcome to The Ice-Cream Point</h2>
+        <ul>
+            <li> Hello The Ice-Cream Point welcomes you. </li>
+            <li> Thankyou for choosing us. </li>
+            <li> We provide different varities of Ice-Creams.</li>
+            <li> Try delicous taste of Ice-Creams</li>
+
+
+        </ul>
+    </div>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="\static\img\ice (1).jpg" class="d-block w-100" height="500px" width=1500px alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="\static\img\ice (2).jpg" class="d-block w-100" height="500px" width=1500px alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="\static\img\ice (3).jpg" class="d-block w-100" height="500px" width=1500px alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<!-- three album -->
+<!-- <div class="album  bg-light">
+    <div class="container">
+        <h1 class=" text-center">Select from range of ice cream</h1>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="https://source.unsplash.com/1000x625/?icecream" class="d-block w-100" alt="...">
+
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="https://source.unsplash.com/1000x625/?icecream" class="d-block w-100" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="https://source.unsplash.com/1000x625/?icecream" class="d-block w-100" alt="...">
+
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div> -->
+<style>
+    .intro {
+        /* background-color: blue; */
+        background-image: url('{{ STATIC_URL }}/static/img/ice.jpg');
+        background-size: auto;
+        border-radius: 15px;
+        text-align: center;
+        padding: 4px;
+        margin: 4px 0;
+        color: maroon;
+    }
+    
+    ul {
+        list-style-type: none;
+    }
+    
+    .intro ul li {
+        text-decoration: burlywood;
+    }
+    
+    #carouselExampleControls img {
+        border-radius: 15px;
+    }
+    
+    h2 {
+        text-decoration: cyan;
+    }
+    
+    body {
+        background-color: rgb(164, 193, 221);
+    }
+</style>
+{%endblock body%}

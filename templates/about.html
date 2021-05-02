@@ -1,0 +1,63 @@
+{%extends 'base.html' %} {%load static%} {% block title %}about{% endblock title %} {%block body%}
+<h1>
+    About Us
+</h1>
+<div class="marquee">
+    <marquee behavior="
+    
+    " direction="">
+        <img src="/static/img/marquee (1).jpg" alt="">
+        <img src="/static/img/marquee (2).jpg" alt="">
+        <img src="/static/img/marquee (3).jpg" alt="">
+        <img src="/static/img/marquee (4).jpg" alt="">
+        <img src="/static/img/marquee (5).jpg" alt="">
+    </marquee>
+</div>
+<div class="about">
+
+    <ul>
+        <li> locate us at:- shop21,near Deepali Boutique,sec 17,Rewari(Haryana)123401 </li>
+        <li> Timings:-9:00AM to 10:00PM </li>
+        <li> contact no.:- 9021170903</li>
+        <li> Go for the <a href="/menu"> Menu</a></li>
+        <li> find us on facebook:-https://www.facebook.com/The Ice-Cream Point</li>
+
+
+
+    </ul>
+</div>
+<style>
+    h1 {
+        text-align: center;
+        color: rgb(49, 22, 3);
+        padding: 5px;
+        font-weight: bold;
+    }
+    
+    .about {
+        /* background-image: url('{{ STATIC_URL }}/static/img/about.jpg');
+        background-size: 500px 250px; */
+        color: rgb(164, 193, 221);
+        font-size: large;
+    }
+    
+    .about ul li {
+        padding: 5px;
+        font-weight: bold;
+        font-size: 27px;
+    }
+    
+    body {
+        background-image: url('{{ STATIC_URL }}/static/img/about.jpg');
+        background-size: 1285px;
+    }
+    
+    .marquee img {
+        height: 200px;
+        width: 150px;
+        margin: 3px;
+        padding: 3px;
+        border-radius: 8px;
+    }
+</style>
+{%endblock body%}

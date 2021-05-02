@@ -1,0 +1,1 @@
+this is tje text of  a static file 
